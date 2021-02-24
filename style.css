@@ -1,0 +1,44 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #010101;
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    margin: 50px auto 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    margin: 50px auto;
+    height: 300px;
+    width: 300px;
+}
+
+.cell {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #f1f1f1;
+    font-size: 60px;
+}
+
+.X {
+    color: #F29F05;
+}
+
+.O {
+    color: #3D64D9;
+}
